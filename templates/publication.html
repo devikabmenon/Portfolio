@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='publication.css')}}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+               <div class="logo">
+                    <h2><span><img src="{{url_for('static',filename='images/logo.png')}}" alt="Logo" width="40px"></span></h2>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                        <li><a href="{{ url_for('work') }}">Works</a></li>
+                        <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    </ul>
+                    <a href="{{url_for('static',filename='resume/cv.pdf')}}" download class="download-btn">
+                        Download Resume<i class="fa-solid fa-file"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <br>
+    </div>
+    <div class="publication-card">
+
+        <div class="publication-content">
+            <h3 class="publication-title">The Role of Cloud Computing in Scaling Startups: Balancing
+                Technology and Business Growth</h3>
+            <p class="publication-description">
+                This paper examines how startups can leverage cloud computing effectively by balancing its
+                benefits and challenges. Through analysis of both successful and unsuccessful cases,
+                including Zoom, Slack, and Dropbox—it explores cost structures, security concerns, and
+                organizational impacts.
+            </p>
+            <div class="publication-meta">
+                <div class="publication-author">
+                    <strong>Arjun Santhosh</strong> (First Author) ,Co-Authors ( Anu Tiji , Devika B Menon ,
+                    Haripriya S , Naithan Thomas )
+                </div>
+                <div class="publication-journal">
+                    International Research Journal on Advanced Engineering and Management (IRJAEM)
+                    2(12):3656-3664
+                </div>
+            </div>
+            <div class="publication-actions">
+                <a href="https://www.researchgate.net/publication/387065928_The_Role_of_Cloud_Computing_in_Scaling_Startups_Balancing_Technology_and_Business_Growth"
+                    class="read-more-btn">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://www.researchgate.net/publication/387065928_The_Role_of_Cloud_Computing_in_Scaling_Startups_Balancing_Technology_and_Business_Growth"
+                    class="download-paper-btn">
+                    <i class="fas fa-download"></i>Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <h2 class="footer-logo">Devika B Menon</h2>
+                <p>A passionate Flutter & Full-Stack Developer creating modern and scalable applications.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                    <li><a href="{{ url_for('work') }}">Works</a></li>
+                    <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="http://linkedin.com/in/devika-b-menon-a24393320"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:devikabmenon03@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/devikabmenon"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Devika B Menon | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

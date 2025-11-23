@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='skills.css')}}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h2><span><img src="{{url_for('static',filename='images/logo.png')}}" alt="Logo" width="40px"></span></h2>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                        <li><a href="{{ url_for('work') }}">Works</a></li>
+                        <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    </ul>
+                     <a href="{{url_for('static',filename='resume/cv.pdf')}}" download class="download-btn">
+                        Download Resume<i class="fa-solid fa-file"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Here's what I can bring to your projects</p>
+
+        <div class="skills-container">
+
+            <div class="skill-category">
+                <h3>Programming</h3>
+
+                <div class="skill">
+                    <span>Flutter</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:90%"></div>
+                    </div>
+                    <span class="percent">90%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Python Flask</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:85%"></div>
+                    </div>
+                    <span class="percent">85%</span>
+                </div>
+
+                <div class="skill">
+                    <span>PHP</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:90%"></div>
+                    </div>
+                    <span class="percent">90%</span>
+                </div>
+
+                <div class="skill">
+                    <span>React</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:65%"></div>
+                    </div>
+                    <span class="percent">65%</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases</h3>
+
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:90%"></div>
+                    </div>
+                    <span class="percent">90%</span>
+                </div>
+
+                <div class="skill">
+                    <span>MySQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:85%"></div>
+                    </div>
+                    <span class="percent">85%</span>
+                </div>
+
+                <div class="skill">
+                    <span>MongoDB</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:75%"></div>
+                    </div>
+                    <span class="percent">75%</span>
+                </div>
+
+
+            </div>
+
+            <div class="skill-category">
+                <h3>Technologies</h3>
+
+                <div class="skill">
+                    <span>HTML/CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:95%"></div>
+                    </div>
+                    <span class="percent">95%</span>
+                </div>
+
+                <div class="skill">
+                    <span>C/C++</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:85%"></div>
+                    </div>
+                    <span class="percent">85%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:70%"></div>
+                    </div>
+                    <span class="percent">70%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Linux</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:80%"></div>
+                    </div>
+                    <span class="percent">80%</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+
+                <div class="skill">
+                    <span>Leadership</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:90%"></div>
+                    </div>
+                    <span class="percent">90%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Hardworking</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:95%"></div>
+                    </div>
+                    <span class="percent">95%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Adaptability</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:85%"></div>
+                    </div>
+                    <span class="percent">85%</span>
+                </div>
+
+                <div class="skill">
+                    <span>Quick Learning</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width:92%"></div>
+                    </div>
+                    <span class="percent">92%</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <h2 class="footer-logo">Devika B Menon</h2>
+                <p>A passionate Flutter & Full-Stack Developer creating modern and scalable applications.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                    <li><a href="{{ url_for('work') }}">Works</a></li>
+                    <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                 <div class="social-icons">
+                    <a href="http://linkedin.com/in/devika-b-menon-a24393320"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:devikabmenon03@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/devikabmenon"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Devika B Menon | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='about.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                 <div class="logo">
+                    <h2><span><img src="{{url_for('static',filename='images/logo.png')}}" alt="Logo" width="40px"></span></h2>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                         <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                        <li><a href="{{ url_for('work') }}">Works</a></li>
+                        <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    </ul>
+
+                     <a href="{{url_for('static',filename='resume/cv.pdf')}}" download class="download-btn">
+                        Download Resume<i class="fa-solid fa-file"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section class="hero-section container">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="{{url_for('static', filename='profile.jpeg')}}" alt="">
+            </div>
+        </div>
+
+        <div class="about-details">
+            <h1>About Me</h1>
+            <p>
+                I’m <strong>Devika B Menon</strong>, a passionate Flutter developer and full-stack web developer.
+                I love building clean, scalable applications using Flutter, PHP, Python (Flask), Django,
+                and MySQL. My work blends logic, creativity, and user-friendly design to create meaningful
+                digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills-section container">
+        <h2>My Tech Stack</h2>
+
+        <div class="skills-icons">
+            <div class="skill-box"><img src="{{url_for('static',filename='images/flutter.png')}}" alt="">
+                <p>Flutter</p>
+            </div>
+            <div class="skill-box"><img src="{{url_for('static',filename='images/php.png')}}" alt="">
+                <p>PHP</p>
+            </div>
+            <div class="skill-box"><img src="{{url_for('static',filename='images/database.png')}}" alt="">
+                <p>Database</p>
+            </div>
+            <div class="skill-box"><img src="{{url_for('static',filename='images/react.png')}}" alt="">
+                <p>React</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-section container">
+        <h2>Connect With Me</h2>
+        <div class="social-icons">
+            <a href="http://linkedin.com/in/devika-b-menon-a24393320" class="social"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:devikabmenon03@gmail.com" class="social"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/devikabmenon" class="social"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <a href="{{ url_for('work') }}" class="btn-view-work">View My Work</a>
+    </section>
+
+    <section class="education-section container">
+        <h2>Education</h2>
+
+        <div class="edu-card">
+            <h3>BCA – Bachelor of Computer Applications</h3>
+            <p>Kristu Jyoti College, MG University</p>
+            <span>2022 – 2025</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>Higher Secondary Education</h3>
+            <p>SVGVHSS Kidanganoor</p>
+            <span>2020 – 2022</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>High School</h3>
+            <p>SVGVHSS Kidanganoor</p>
+            <span>2019 – 2020</span>
+        </div>
+    </section>
+
+    <section class="certification-section container">
+        <h2>Certifications</h2>
+
+        <ul class="cert-list">
+            <li>Flutter Development course–Riss Technology</li>
+            <li>Ethical Hacking–REDTEAM360</li>
+            <li>React–Faith Infosis</li>
+
+        </ul>
+    </section>
+
+    <section class="goals-section container">
+        <h2>My Goals</h2>
+        <p>
+            I aim to become a strong software engineer capable of building innovative,
+            scalable applications. I am continuously improving my knowledge in mobile
+            app development, backend systems, and UI/UX design.
+        </p>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <h2 class="footer-logo">Devika B Menon</h2>
+                <p>A passionate Flutter & Full-Stack Developer creating modern and scalable applications.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                    <li><a href="{{ url_for('work') }}">Works</a></li>
+                    <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="http://linkedin.com/in/devika-b-menon-a24393320"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:devikabmenon03@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/devikabmenon"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Devika B Menon | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

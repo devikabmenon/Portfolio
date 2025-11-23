@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='work.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+             <div class="logo">
+                    <h2><span><img src="{{url_for('static',filename='images/logo.png')}}" alt="Logo" width="40px"></span></h2>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                         <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                        <li><a href="{{ url_for('work') }}">Works</a></li>
+                        <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+
+                    <a href="{{url_for('static',filename='resume/cv.pdf')}}" download class="download-btn">
+                        Download Resume<i class="fa-solid fa-file"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A collection of my recent work</p>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{{url_for('static',filename='images/dangeraanalloo.png')}}" alt="E-Commerce App">
+                </div>
+
+                <div class="project-content">
+                    <h3>Security Checking App</h3>
+                    <a href="#" class="project-type">Online Url Checker</a>
+
+                    <p class="project-description">
+                        Danger Aanallo is a mobile security app that helps users instantly verify if a
+                        website is safe to visit. Using trusted APIs like Google Safe Browsing,
+                        VirusTotal, and IPQualityScore, it scans URLs for malware, phishing, and other
+                        threats.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>API Integration</span>
+                        <span>Dart</span>
+                        <span>Security</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <a href="#" class="btn-view">View Details →</a>
+                        <a href="#" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{{url_for('static',filename='images/miniproject.png')}}" alt="E-waste">
+                </div>
+
+                <div class="project-content">
+                    <h3>Electronic waste Management</h3>
+                    <a href="#" class="project-type"></a>
+
+                    <p class="project-description">
+                        This project is a PHP-based system that helps users safely dispose of electronic waste by
+                        requesting pickups and finding nearby collection centers.
+                        It promotes proper recycling and reduces environmental pollution.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Html/Css</span>
+                        <span>Php</span>
+                        <span>Mysql</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <a href="#" class="btn-view">View Details →</a>
+                        <a href="#" class="btn-github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{{url_for('static',filename='images/mainproject.png')}}"
+                        alt="Academic Innovation Tracker">
+                </div>
+                <div class="project-content">
+
+                    <div class="Academic Innovation Tracker">
+                        <h3>Academic Innovation Tracker</h3>
+                        <a href="#" class="project-type">Academic Innovation Tracker</a>
+
+                        <p class="project-description">
+                            The Academic Innovation Tracker is a platform designed to help computer science students
+                            find trusted training institutions, internships, and skill-development programs.
+                            It connects learners with verified centers, streamlines the search process, and supports
+                            students in making better academic and career decisions.
+
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Python Django</span>
+                            <span>SQlite</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="#" class="btn-view">View Details →</a>
+                            <a href="#" class="btn-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <h2 class="footer-logo">Devika B Menon</h2>
+                <p>A passionate Flutter & Full-Stack Developer creating modern and scalable applications.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                    <li><a href="{{ url_for('work') }}">Works</a></li>
+                    <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="http://linkedin.com/in/devika-b-menon-a24393320"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:devikabmenon03@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/devikabmenon"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Devika B Menon | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h2><span><img src="{{url_for('static',filename='images/logo.png')}}" alt="Logo" width="40px"></span></h2>
+                </div>
+
+             
+
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                        <li><a href="{{ url_for('work') }}">Works</a></li>
+                        <li><a href="{{ url_for('publication') }}">Publication</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    </ul>
+                    <a href="{{url_for('static',filename='resume/cv.pdf')}}" download class="download-btn">
+                        Download Resume<i class="fa-solid fa-file"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero-section container">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="{{url_for('static',filename='profile.jpeg')}}" alt="" srcset="">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="name">Devika</span></h1>
+
+            <p class="subtitle">
+                A passionate Flutter and full-stack web developer with a BCA from Kristu Jyoti College (MG University).
+                I specialize in building scalable applications using Flutter, PHP, MySQL, and Python (Flask).
+
+
+            <p class="description">
+                I focus on creating smart solutions, clean code, and smooth user experiences by blending design with
+                logic.
+                With hands-on experience in modern frameworks, I turn ideas into real, impactful digital products.
+            </p>
+
+
+
+            <div class="cta-buttons">
+                <a href="{{url_for('work')}}" class="btn btn-primary">View My Work →</a>
+                <a href="{{url_for('contact')}}" class="btn btn-secondary">Get In Touch ✉</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
